@@ -121,7 +121,7 @@ textarea:hover {
     overflow: hidden;
 }
 
-.radio-button > p {
+.radio-button > label {
     display: block;
     padding-left: 5px;
     font-size: 13px; color: var(--Grey-900);
