@@ -14,32 +14,35 @@
     <!-- Name Input -->
     <div class="multi-inputs">
       <div class="input">
-        <p>First Name <span>*</span></p>
-        <input type="text">
+        <label>First Name <span>*</span>
+          <input type="text">
+        </label>
         <p class="error">This field is required</p>
       </div>
       <div class="input">
-        <p>Last Name <span>*</span></p>
-        <input type="text">
+        <label>Last Name <span>*</span>
+          <input type="text">
+        </label>
         <p class="error">This field is required</p>
       </div>
     </div>
     <!-- Email Input -->
     <div class="input">
-      <p>Email Address <span>*</span></p>
-      <input type="email">
+      <label>Email Address <span>*</span>
+        <input type="email">
+      </label>
       <p class="error">Please enter a valid email address</p>
     </div>
     <!-- Radio Input -->
     <div class="multi-inputs radio-q">
       <p>Query Type <span>*</span></p>
       <div class="wrap">
-        <label class="radio-button">
+        <div class="radio-button">
           <input type="radio" name="query" value="general_enquiry" />
           <span class="radio-tick"></span>
           <p>General Enquiry</p>
           <span class="span-bg"></span>
-        </label>
+        </div>
         <label class="radio-button">
           <input type="radio" name="query" value="support_request" />
           <span class="radio-tick"></span>
@@ -51,8 +54,9 @@
     </div>
     <!-- Message Input -->
     <div class="input">
-      <p>Message <span>*</span></p>
-      <textarea type="text" id="msg"> </textarea>
+      <label>Message <span>*</span>
+        <textarea id="msg"> </textarea>
+      </label>
       <p class="error">This field is required</p>
     </div>
     <!-- Checkbox -->
