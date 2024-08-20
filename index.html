@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Contact form</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main>
+    <h1 class="title">Contact Us</h1>
+    <!-- Name Input -->
+    <div class="multi-inputs">
+      <div class="input">
+        <p>First Name <span>*</span></p>
+        <input type="text">
+        <p class="error">This field is required</p>
+      </div>
+      <div class="input">
+        <p>Last Name <span>*</span></p>
+        <input type="text">
+        <p class="error">This field is required</p>
+      </div>
+    </div>
+    <!-- Email Input -->
+    <div class="input">
+      <p>Email Address <span>*</span></p>
+      <input type="email">
+      <p class="error">Please enter a valid email address</p>
+    </div>
+    <!-- Radio Input -->
+    <div class="multi-inputs radio-q">
+      <p>Query Type <span>*</span></p>
+      <div class="wrap">
+        <label class="radio-button">
+          <input type="radio" name="query" value="general_enquiry" />
+          <span class="radio-tick"></span>
+          <p>General Enquiry</p>
+          <span class="span-bg"></span>
+        </label>
+        <label class="radio-button">
+          <input type="radio" name="query" value="support_request" />
+          <span class="radio-tick"></span>
+          <p>Support Request</p>
+          <span class="span-bg"></span>
+        </label>
+      </div>
+      <p class="error">Please select a query type</p>
+    </div>
+    <!-- Message Input -->
+    <div class="input">
+      <p>Message <span>*</span></p>
+      <textarea type="text" id="msg"> </textarea>
+      <p class="error">This field is required</p>
+    </div>
+    <!-- Checkbox -->
+
+    <label class="check-wrap">
+      <div class="check">
+        <input id="checkbox-type" type="checkbox">
+        <span class="checkbox-tick"></span>
+        <p id="check-text">I consent to being contacted by the team <span>*</span></p>
+      </div>
+      <p class="error">To submit this form, please consent to being contacted</p>
+    </label>
+    
+    <button class="submit">Submit</button>
+  </main>
+
+  <div class="success">
+    <div>
+      <img src="./assets/images/icon-success-check.svg" alt="success">
+      Message Sent!
+    </div>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+
+  <!-- 
+  
+  
+   -->
+</body>
+</html>
